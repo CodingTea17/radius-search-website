@@ -1,0 +1,19 @@
+.nav {
+  background-color: #37474F;
+  height: 60px;
+}
+.heading-text {
+  color: #efefef;
+}
+.text-secondary {
+  color: #efefef !important;
+}
+.bg-secondary {
+  background-color: #37474F !important;
+}
+#top-row {
+  margin-top: 30px;
+}
+#results {
+  display: none;
+}

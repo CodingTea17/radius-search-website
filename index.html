@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>rdbOregon Radius Search</title>
+  </head>
+  <body >
+    <nav class="nav heading-text">
+      <!-- <p class="nav-link active" href="#">Home</p>
+      <p class="nav-link" href="#">Documention</p> -->
+    </nav>
+    <div class="container-fluid">
+      <div class="row" id="top-row">
+        <div class="col-12">
+          <div class="card bg-secondary text-secondary">
+            <div class="card-header">Radius Search Proof of Concept</div>
+            <div class="card-body">
+              <h4 class="card-title">Preform a Radius Search</h4>
+              <!-- <p class="card-text">Enter an address below and select a search radius </p> -->
+              <ol>
+                <li>Enter an address</li>
+                <li>Select a radius</li>
+                <li>Click the submit</li>
+              </ol>
+              <form>
+                <div class="form-group">
+                  <label for="inputAddress" class="col-form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity" class="col-form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Portland">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState" class="col-form-label">State</label>
+                    <input type="text" class="form-control" id="inputState" placeholder="Oregon">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip" class="col-form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="97214">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputRadius">Select a radius</label>
+                  <select class="form-control" id="inputRadius">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-light btn-block">Search</button>
+              </form>
+              <div id="results">
+                <h1>Results:</h1>
+                <ul>
+                  <!-- Where the list items will be appended -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5mtxLFa4ZaMKfd3xbc1OxjZfX0zDbsVc&callback=initMap">
+ </script>
+  </body>
+</html>
